@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\odith\\OneDrive\\Desktop\\todo-task-app\\ContactApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB19FA9-4761-47A2-81E1-54BA2B3F376B}|ContactApp.csproj|c:\\users\\odith\\onedrive\\desktop\\todo-task-app\\contactapp\\models\\countrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB19FA9-4761-47A2-81E1-54BA2B3F376B}|ContactApp.csproj|solutionrelative:models\\countrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB19FA9-4761-47A2-81E1-54BA2B3F376B}|ContactApp.csproj|c:\\users\\odith\\onedrive\\desktop\\todo-task-app\\contactapp\\models\\contactmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB19FA9-4761-47A2-81E1-54BA2B3F376B}|ContactApp.csproj|solutionrelative:models\\contactmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactModel.cs",
+              "DocumentMoniker": "C:\\Users\\odith\\OneDrive\\Desktop\\todo-task-app\\ContactApp\\Models\\ContactModel.cs",
+              "RelativeDocumentMoniker": "Models\\ContactModel.cs",
+              "ToolTip": "C:\\Users\\odith\\OneDrive\\Desktop\\todo-task-app\\ContactApp\\Models\\ContactModel.cs",
+              "RelativeToolTip": "Models\\ContactModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T04:48:40.067Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CountryModel.cs",
+              "DocumentMoniker": "C:\\Users\\odith\\OneDrive\\Desktop\\todo-task-app\\ContactApp\\Models\\CountryModel.cs",
+              "RelativeDocumentMoniker": "Models\\CountryModel.cs",
+              "ToolTip": "C:\\Users\\odith\\OneDrive\\Desktop\\todo-task-app\\ContactApp\\Models\\CountryModel.cs",
+              "RelativeToolTip": "Models\\CountryModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T04:47:45.297Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

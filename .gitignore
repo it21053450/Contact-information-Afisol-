@@ -1,0 +1,25 @@
+# Build output
+bin/
+obj/
+dist/
+
+# Node modules
+node_modules/
+
+# Environment
+*.user
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite

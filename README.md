@@ -93,61 +93,9 @@ npm start
 ```
 
 The application will be available at: `http://localhost:4200`
-
-## 📚 API Documentation
-
-### Base URL
-```
-http://localhost:5135/api
 ```
 
-### Endpoints
 
-#### Get All Contacts
-```
-GET /contacts
-```
-
-#### Get Contact by ID
-```
-GET /contacts/{id}
-```
-
-#### Create Contact
-```
-POST /contacts
-Content-Type: application/json
-
-{
-  "name": "string",
-  "email": "string",
-  "tel": "string",
-  "mobile": "string",
-  "address": "string",
-  "country": "string"
-}
-```
-
-#### Update Contact
-```
-PUT /contacts/{id}
-Content-Type: application/json
-
-{
-  "contactID": number,
-  "name": "string",
-  "email": "string",
-  "tel": "string",
-  "mobile": "string",
-  "address": "string",
-  "country": "string"
-}
-```
-
-#### Delete Contact
-```
-DELETE /contacts/{id}
-```
 
 ## 🛠️ Technology Stack
 
@@ -194,106 +142,9 @@ src/app/
   └── [feature components]
 ```
 
-## 🔧 Configuration
 
-### Backend Configuration (appsettings.json)
-- Database connection string
-- Logging settings
-- API endpoints
 
-### Frontend Configuration (angular.json)
-- Build options
-- Development server settings
-- Production build configuration
 
-## 📝 Database Models
-
-### Contact
-| Field | Type | Description |
-|-------|------|-------------|
-| ContactID | int | Primary key |
-| Name | string | Contact name |
-| Email | string | Email address |
-| Tel | string | Telephone |
-| Mobile | string | Mobile number |
-| Address | string | Physical address |
-| Country | string | Country |
-
-## 🧪 Testing
-
-### Run Backend Tests
-```bash
-cd ContactApp
-dotnet test
-```
-
-### Run Frontend Tests
-```bash
-cd todo-ui
-ng test
-```
-
-## 🔐 Security Considerations
-
-- Enable HTTPS in production
-- Implement authentication/authorization
-- Validate all input data
-- Use environment variables for sensitive data
-- Enable CORS only for trusted domains
-
-## 📦 Build & Deployment
-
-### Build Backend
-```bash
-cd ContactApp
-dotnet publish -c Release
-```
-
-### Build Frontend
-```bash
-cd todo-ui
-ng build --configuration production
-```
-
-## 🐛 Troubleshooting
-
-### Port Already in Use
-- Backend: Change port in `launchSettings.json`
-- Frontend: Use `ng serve --port 4300`
-
-### Database Connection Issues
-- Verify SQL Server is running
-- Check connection string in `appsettings.json`
-- Ensure LocalDB is installed (SQL Server Express included)
-
-### CORS Errors
-- Add frontend URL to CORS policy in backend
-- Check `Program.cs` for CORS configuration
-
-### Dependencies Not Installing
-```bash
-# Clear cache and reinstall
-npm cache clean --force
-npm install
-
-# Or for .NET
-dotnet nuget locals all --clear
-dotnet restore
-```
-
-## 📄 License
-
-This project is part of the Afisol Contact Information Management System.
-
-## 👤 Author
-
-**IT21053450** - [GitHub](https://github.com/it21053450)
-
-## 🔗 Repository
-
-- **Frontend**: [https://github.com/it21053450/Contact-information-Afisol-](https://github.com/it21053450/Contact-information-Afisol-)
-
-## 📞 Support
 
 For issues or questions, please create an issue in the GitHub repository.
 

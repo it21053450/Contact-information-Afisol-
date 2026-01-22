@@ -1,153 +1,57 @@
-# Contact Information Application - Afisol
+# Contact Information Application
 
-A full-stack web application for managing contact information with a .NET Core backend and Angular frontend.
+A full-stack web application for managing contact information with .NET Core backend and Angular frontend.
 
-## 📋 Project Overview
+## Project Structure
 
-This project consists of two main components:
-- **Backend**: ASP.NET Core 8.0 REST API with Entity Framework Core and SQL Server
-- **Frontend**: Angular 20+ single-page application with TypeScript
+- **ContactApp/** - ASP.NET Core 8.0 backend API
+- **todo-ui/** - Angular 20+ frontend application
 
-## 🏗️ Architecture
+## Backend Setup
 
-```
-todo-task-app/
-├── ContactApp/          # .NET Core Backend
-│   ├── Controllers/     # API endpoints
-│   ├── Models/          # Data models
-│   ├── Data/            # Database context
-│   ├── Migrations/      # EF Core migrations
-│   └── Views/           # Razor views (if used)
-├── todo-ui/             # Angular Frontend
-│   ├── src/
-│   │   ├── app/         # Application components & services
-│   │   ├── assets/      # Static assets
-│   │   └── styles.css   # Global styles
-│   └── angular.json     # Angular configuration
-└── README.md
-```
+1. Navigate to ContactApp folder
+2. Run: `dotnet restore`
+3. Update connection string in `appsettings.json`
+4. Run: `dotnet ef database update`
+5. Run: `dotnet run`
 
-## 🚀 Getting Started
+Backend runs on: `http://localhost:5135`
 
-### Prerequisites
-- **.NET 8 SDK** - [Download](https://dotnet.microsoft.com/download)
-- **Node.js 20+** - [Download](https://nodejs.org/)
-- **SQL Server** (LocalDB or full edition)
-- **Angular CLI** - `npm install -g @angular/cli`
+## Frontend Setup
 
-### Backend Setup (ContactApp)
+1. Navigate to todo-ui folder
+2. Run: `npm install`
+3. Run: `ng serve`
 
-1. Navigate to the backend directory:
-```bash
-cd ContactApp
-```
+Frontend runs on: `http://localhost:4200`
 
-2. Install dependencies:
-```bash
-dotnet restore
-```
+## Technologies
 
-3. Update database connection string in `appsettings.json`:
-```json
-"ConnectionStrings": {
-  "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=ContactDb;Trusted_Connection=true;"
-}
-```
+- **Backend**: ASP.NET Core 8, Entity Framework Core, SQL Server
+- **Frontend**: Angular 20+, TypeScript
 
-4. Apply migrations:
-```bash
-dotnet ef database update
-```
+## Main Features
 
-5. Run the backend:
-```bash
-dotnet run
-```
+- View all contacts
+- Add new contact
+- Update contact information
+- Delete contacts
+- Search contacts
 
-The API will be available at: `http://localhost:5135`
+## API Endpoints
 
-### Frontend Setup (todo-ui)
+- `GET /api/contacts` - Get all contacts
+- `GET /api/contacts/{id}` - Get contact by ID
+- `POST /api/contacts` - Create new contact
+- `PUT /api/contacts/{id}` - Update contact
+- `DELETE /api/contacts/{id}` - Delete contact
 
-1. Navigate to the frontend directory:
-```bash
-cd todo-ui
-```
+## Database Models
 
-2. Install dependencies:
-```bash
-npm install
-```
+Contact has fields: ContactID, Name, Email, Tel, Mobile, Address, Country
 
-3. Update API URL in `src/app/services/contact.service.ts` if needed:
-```typescript
-private apiUrl = 'http://localhost:5135/api';
-```
+## Prerequisites
 
-4. Start the development server:
-```bash
-ng serve
-```
-or
-```bash
-npm start
-```
-
-The application will be available at: `http://localhost:4200`
-```
-
-
-
-## 🛠️ Technology Stack
-
-### Backend
-- **Framework**: ASP.NET Core 8.0
-- **Database**: SQL Server with Entity Framework Core
-- **Architecture**: MVC / API Pattern
-- **Language**: C#
-
-### Frontend
-- **Framework**: Angular 20+
-- **Language**: TypeScript
-- **Build Tool**: Angular CLI / Vite
-- **Styling**: CSS
-
-## 📦 Project Structure
-
-### Backend (ContactApp)
-```
-Controllers/
-  ├── ContactsController.cs  # Contact CRUD operations
-  └── HomeController.cs      # Home page
-
-Models/
-  ├── ContactModel.cs        # Contact entity
-  ├── CountryModel.cs        # Country reference
-  └── ErrorViewModel.cs      # Error handling
-
-Data/
-  └── ContactDbContext.cs    # EF Core context
-
-Migrations/
-  └── 20260122160156_InitialCreate.cs
-```
-
-### Frontend (todo-ui)
-```
-src/app/
-  ├── app.component.*        # Root component
-  ├── models/
-  │   └── contact.ts        # Contact interface
-  ├── services/
-  │   └── contact.service.ts # API service
-  └── [feature components]
-```
-
-
-
-
-
-For issues or questions, please create an issue in the GitHub repository.
-
----
-
-**Last Updated**: January 22, 2026
+- .NET 8 SDK
+- Node.js 20+
+- SQL Server (LocalDB)
